@@ -8,6 +8,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Properties;
+
+import org.junit.Test;
 /**
  * @category 数据库助手
  * @author WOM
@@ -55,6 +57,10 @@ public class DBHelper {
 			}
 			
 		}
+	}
+	@Test
+	public void test() {
+		this.getConnection();
 	}
 	/**
 	 * 	关闭数据库连接
